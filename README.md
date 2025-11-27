@@ -1,4 +1,6 @@
 # Config Helper For Salmon's Anime_Vanguard-Macro-2
+# Macro link
+https://github.com/SalmonDXH/Anime_Vanguard-Macro-2
 # How to download
  1. Go to [Config Helper download](https://github.com/Yavanari/Config-Helper-For-Salmon-s-Anime_Vanguard-Macro-2)
  2. Click green button **Code**
