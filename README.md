@@ -6,7 +6,7 @@
  4. Extract all files to folder where your **(Salmon_AV.exe)  macro** located at
 # How to use as a player
 1. Click on **Create gamemode folders** button if you dont have nessesary folders
-2. Go to ⁠「💾」custom-configs and download a custom config (only v2.0 configs work)
+2. Go to ⁠https://discord.com/channels/1309512479386243072/1388218189846151310 and download a custom config (only v2.0 configs work)
 3. Copy the (.rar or .zip) file into the newly made ImportConfigs folder
 4. Click **Extract All Configs** button(All Zip, Rar will be moved to ExtractedZIP folder)
 5. Select **Extracted config folder** in config folder menu to search configs only in this folder
