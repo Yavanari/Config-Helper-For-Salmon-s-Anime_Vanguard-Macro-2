@@ -11,7 +11,7 @@ DownloadFolder := A_ScriptDir
 DownloadZIP() {
     global GitHubUrl, ZipFileName, DownloadFolder
     
-    MsgBox("Starting download...")
+    MsgBox("Click to start updating `nWill take ~15-20 sec")
     
     try {
         ; Create HTTP request
@@ -34,16 +34,15 @@ DownloadZIP() {
 }
 DownloadExtractBtn(*)
 {
-    try {
-        psCommand := 'Expand-Archive -Path "' A_ScriptDir . "\Config-Helper-For-Salmon-s-Anime_Vanguard-Macro-2-Latest.zip" '" -DestinationPath "' A_ScriptDir '" -Force'
-        RunWait('powershell -Command "' psCommand '"', , "Hide")
-    }
+    path := A_ScriptDir . "\Config-Helper-For-Salmon-s-Anime_Vanguard-Macro-2-Latest.zip"
+    psCommand := 'Expand-Archive -Path \"' path '\" -DestinationPath \"' A_ScriptDir '\" -Force'
+    RunWait('powershell -Command ' psCommand, , "Hide")
     
         loop files A_ScriptDir . "\Config-Helper-For-Salmon-s-Anime_Vanguard-Macro-2-main" "\*", "F"
         {
-            if (A_LoopFileName = "Update.ahk")
+            if (A_LoopFileName = "UpdateHelper.ahk")
             {
-                break
+                continue
             }
             FileMove A_LoopFileFullPath , A_ScriptDir , 1
         }
@@ -54,5 +53,6 @@ DownloadExtractBtn(*)
 }
 DownloadZIP()
 DownloadExtractBtn()
-DirDelete A_ScriptDir . "\Config-Helper-For-Salmon-s-Anime_Vanguard-Macro-2-main"
+DirDelete A_ScriptDir . "\Config-Helper-For-Salmon-s-Anime_Vanguard-Macro-2-main" , 1
 FileDelete A_ScriptDir . "\Config-Helper-For-Salmon-s-Anime_Vanguard-Macro-2-Latest.zip"
+MsgBox("Updated Successfully")
