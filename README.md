@@ -24,7 +24,7 @@ https://github.com/SalmonDXH/Anime_Vanguard-Macro-2
 7. After importing **Config folder** will be deleted
 8. **Default Strategy** button will import universal default strategy from AIO V1 (made by :@knownaszad)
 
-###Also you can manually select Strategy,Team,Coordinates txt in "Manual select config txts"
+### Also you can manually select Strategy,Team,Coordinates txt in "Manual select config txts"
 1. Browse all files in your explorer 
 2. Select **Gamemode , Map , Team**
 3. Click Import Button
