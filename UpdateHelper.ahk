@@ -6,7 +6,7 @@ Branch := "main"
 GitHubUrl := "https://github.com/" RepoOwner "/" RepoName "/archive/refs/heads/" Branch ".zip"
 ZipFileName := RepoName "-Latest.zip"
 DownloadFolder := A_ScriptDir 
-
+WinClose("ConfigHelper.ahk")
 
 DownloadZIP() {
     global GitHubUrl, ZipFileName, DownloadFolder
@@ -51,6 +51,7 @@ DownloadExtractBtn(*)
         DirMove A_LoopFileFullPath , A_ScriptDir , 1
         }
 }
+
 DownloadZIP()
 DownloadExtractBtn()
 DirDelete A_ScriptDir . "\Config-Helper-For-Salmon-s-Anime_Vanguard-Macro-2-main" , 1
