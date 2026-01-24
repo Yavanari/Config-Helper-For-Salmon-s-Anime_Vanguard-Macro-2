@@ -6,7 +6,7 @@ Branch := "main"
 GitHubUrl := "https://github.com/" RepoOwner "/" RepoName "/archive/refs/heads/" Branch ".zip"
 ZipFileName := RepoName "-Latest.zip"
 DownloadFolder := A_ScriptDir 
-WinClose("ConfigHelper.ahk")
+try WinClose("ConfigHelper.exe")
 
 DownloadZIP() {
     global GitHubUrl, ZipFileName, DownloadFolder
