@@ -57,3 +57,4 @@ DownloadExtractBtn()
 DirDelete A_ScriptDir . "\Config-Helper-For-Salmon-s-Anime_Vanguard-Macro-2-main" , 1
 FileDelete A_ScriptDir . "\Config-Helper-For-Salmon-s-Anime_Vanguard-Macro-2-Latest.zip"
 MsgBox("Updated Successfully")
+Run "ConfigHelper.exe"
